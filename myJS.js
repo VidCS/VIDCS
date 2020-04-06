@@ -11,7 +11,7 @@ var RdTran = document.getElementById("RdTran");
 var CbTransl = document.getElementById("CbTransl");
 
 
-var parentDate = document.getElementById("deadline");
+//var parentDate = document.getElementById("deadline");
 var parentHours = document.getElementById("hours");
 var parentMinutes = document.getElementById("minutes");
 var parentSecondes = document.getElementById("secondes");
@@ -20,7 +20,7 @@ var parentSecondes = document.getElementById("secondes");
 var hours = Number(parentHours.getElementsByTagName("input")[0].value);
 var minutes = Number(parentMinutes.getElementsByTagName("input")[0].value);
 var secondes = Number(parentSecondes.getElementsByTagName("input")[0].value);
-var date = Number(parentDate.getElementsByTagName("input")[0].value);
+//var date = Number(parentDate.getElementsByTagName("input")[0].value);
 
 var videoEN = document.getElementById("video1");
 var videoFR = document.getElementById("video2");
@@ -76,7 +76,7 @@ function showMoreLess(id, dots, more) {
   
 function refreshVar(){
     
-  parentDate = document.getElementById("deadline");
+  //parentDate = document.getElementById("deadline");
   parentHours = document.getElementById("hours");
   parentMinutes = document.getElementById("minutes");
   parentSecondes = document.getElementById("secondes");
@@ -84,7 +84,7 @@ function refreshVar(){
   hours = Number(parentHours.getElementsByTagName("input")[0].value);
   minutes = Number(parentMinutes.getElementsByTagName("input")[0].value);
   secondes = Number(parentSecondes.getElementsByTagName("input")[0].value);
-  date = Number(parentDate.getElementsByTagName("input")[0].value);
+  //date = Number(parentDate.getElementsByTagName("input")[0].value);
 
 }
 
@@ -160,8 +160,8 @@ function getElts(idElts){
 
   if(idElts === "secondes")
     return parentSecondes;
-  if(idElts === "deadline")
-    return parentDate;
+  //if(idElts === "deadline")
+  //  return parentDate;
 
  }
 
